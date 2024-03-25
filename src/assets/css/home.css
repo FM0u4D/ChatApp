@@ -1,0 +1,42 @@
+
+/*-------Profile Banner-------*/
+.profile_banner {
+    opacity: .8 !important;
+    border-radius: 12px !important;
+    background: url("../img/profile_banner.jpg") no-repeat !important;
+}
+/*=======Profile Banner=======*/
+
+
+/*------- Hover conversation -------*/
+
+#chatList {
+    position: relative;
+    height: 59vh;
+}
+
+#chatList > li:hover {
+    opacity:1 !important;
+}
+
+/*======= Hover conversation =======*/
+
+/*------- Conversation Animation -------*/
+/*
+#chatList li {
+    position: absolute;
+    width: 100%;
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+}
+*/
+/*======= Conversation Animation =======*/
+
+/*--------- Background -----------*/
+
+.bkb > .bghome{
+    background: url("../img/background_banner.jpg") no-repeat !important;
+}
+
+/*========== Background ============*/

@@ -1,0 +1,50 @@
+/*----Background as Banner for LOGIN----*/
+
+.bkb {
+    background: url("../img/banner.jpg") no-repeat;
+}
+
+.bkb > div{
+    background: url("../img/insider_banner.jpg") no-repeat;
+    border: .5px solid lightblue;
+    box-shadow: 0px 0px 24px 3px rgba(173,216,230,0.64) !important;
+    -webkit-box-shadow: 0px 0px 24px 3px rgba(173,216,230,0.64) !important;
+    -moz-box-shadow: 0px 0px 24px 3px rgba(173,216,230,0.64) !important;
+}
+
+.bkb label, .bkb h3 {
+    color: lightblue;
+}
+
+.bkb h3{
+    font-weight: bold;
+}
+
+/*====Background as Banner for LOGIN ====*/
+
+/*------- Input ---------*/
+
+.form-control {
+    opacity: .3;
+    font-weight: bold;
+}
+
+.form-control:active, .form-control:focus {
+    opacity: .5;
+}
+/*=========== Input ===========*/
+
+/*------- Left Buttons ---------*/
+
+#signup, #login {
+    color: lightblue;
+    border: 1px solid #0D6EFD;
+    
+}
+
+#signup:hover, #login:hover {
+    color: #FFF;
+    background: #0D6EFD ;
+}
+/*========= Left Buttons =========*/
+

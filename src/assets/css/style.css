@@ -1,0 +1,230 @@
+:root {
+    /* the radius */
+    --r: 9px;
+    /* the size of the tail */
+    --t: 12px;
+}
+
+.vh-100 {
+	min-height: 100vh;
+}
+
+.w-400 {
+	width: 400px;
+}
+
+.fs-xs {
+	font-size: 1rem;
+}
+
+.w-10 {
+	width: 10%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.fs-big {
+	font-size: 5rem !important;
+}
+
+.online,.online-busy {
+	width: 10px;
+	height: 10px;
+	background: green;
+	border-radius: 50%;
+}
+.online-busy{
+	background: orange !important;
+}
+
+.offline {
+	width: 10px;
+	height: 10px;
+	background: red;
+	border-radius: 50%;
+}
+
+.w-15 {
+	width: 15%;
+}
+
+.fs-sm {
+	font-size: 1.4rem;
+}
+
+small {
+	color: #bbb;
+	font-size: 0.7rem;
+	text-align: right;
+}
+
+.chat-box {
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 50vh;
+}
+
+.messagetxt {
+	max-width: 35vw;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	text-wrap: balance;
+	padding: calc(2*var(--r)/3);
+	-webkit-mask:
+        radial-gradient(var(--t) at var(--_d) 0, #0000 98%, #000 102%) var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+        conic-gradient(at var(--r) var(--r), #000 75%, #0000 0) calc(var(--r)/-2) calc(var(--r)/-2) padding-box,
+        radial-gradient(50% 50%, #000 98%, #0000 101%) 0 0/var(--r) var(--r) space padding-box;
+}
+
+.rtext {
+	--_d: 100%;
+	background: rgb(154 189 242 / 33%);
+	color: #444;
+	border-right: var(--t) solid #0000;
+    margin-left: var(--t);
+}
+
+.ltext {
+	--_d: 0%;
+	background: #3289c8;
+	color: #fff;
+	border-left: var(--t) solid #0000;
+	margin-right: var(--t);
+}
+
+/* Notified */
+.notify {
+	font-weight: bold;
+	color: #000 !important;
+}
+
+.lastMsg {
+	white-space: nowrap;
+	width: 18vw;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: anywhere;
+	font-size: 12px;
+	color: #5c5b5b ;
+}
+
+textarea {
+	resize: none;
+}
+
+/*message_status*/
+
+/* Check Mark */
+.checkmark {
+	position: relative;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+}
+/*
+.checkmark::after {
+	content: '';
+	position: absolute;
+	width: 3px;
+	height: 9px;
+	background-color: #ccc;
+	left: 75%;
+	top: 50%;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-bottom-right-radius: 9px;
+	transform: translate(-75%,-50%);
+}
+	
+.checkmark::before {
+	content: '';
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	background-color: #ccc;
+	left: calc(75% - 4.5px);
+	top: calc(50% + 2px);
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+*/
+.checkmark .CMsupport {
+	position: absolute;
+	width: 3px;
+	height: 9px;
+	left: 75%;
+	top: 50%;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-bottom-right-radius: 9px;
+	transform: translate(-75%,-50%);
+	background-color: #ccc;
+}
+	
+.checkmark .CMtail {
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	left: calc(75% - 4.5px);
+	top: calc(50% + 2px);
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	background-color: #ccc;
+}
+
+.read {
+	background-color: blue !important;
+}
+
+.unread {
+	background-color: #ccc !important;
+}
+/*---Check Mark---*/
+
+/*-----Sign out Button-----*/
+#sign-out:hover {
+	color: #1C1F23 !important;
+	background: #FFF !important;
+}
+/*=====Sign out Button=====*/
+
+/*------Back to chats button------*/
+#back_chat {
+	cursor: pointer;
+}
+
+#back_chat:hover {
+	box-shadow: 0 0 10px 0 rgba(255, 255, 255, .3);
+    -webkit-box-shadow: 0 0 10px 0 rgba(255, 255, 255, .3);
+    -moz-box-shadow: 0 0 10px 0 rgba(255, 255, 255, .3);
+	background-color: #161a1e !important;
+}
+
+/*======Back to chats button======*/
+
+
+/*-------Copyrights-------*/
+#copyright{
+	position: absolute;
+	bottom: 0;
+	background: transparent !important;
+	box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+	border: none !important;
+	color: #ccc !important;
+	font-size: 9px;
+	font-weight: bold;
+	margin-bottom: 3px;
+	opacity: .06;
+}
+/*=======Copyrights=======*/

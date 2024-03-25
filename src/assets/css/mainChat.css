@@ -1,0 +1,203 @@
+/* Profile image */
+:root {
+    --circleSize: 64px;
+    --radius: 50%;
+    --shadow: 0 0 10px 0 rgba(255, 255, 255, .3);
+    --fontColor: rgb(250, 250, 250);
+}
+
+/*----- Blink animation -----*/
+
+@keyframes blink {
+	50%   {
+		transform: scale(1.3);
+		opacity: 0
+	}
+	100%   {
+		transform: scale(1.3);
+		opacity: 0
+	}
+}
+@-webkit-keyframes blink {
+	50%   {
+		transform: scale(1.3);
+		opacity: 0
+	}
+	100%   {
+		transform: scale(1.3);
+		opacity: 0
+	}
+}
+@-o-keyframes blink {
+	50%   {
+		transform: scale(1.3);
+		opacity: 0
+	}
+	100%   {
+		transform: scale(1.3);
+		opacity: 0
+	}
+}
+@-moz-keyframes blink {
+	50%   {
+		transform: scale(1.3);
+		opacity: 0
+	}
+	100%   {
+		transform: scale(1.3);
+		opacity: 0
+	}
+}
+/*****************************************/
+@keyframes blinked {
+	50%   {
+        background: #fff;
+	}
+	100%   {
+        background: #eb9941;
+	}
+}
+@-webkit-keyframes blinked {
+	50%   {
+        background: #fff;
+	}
+	100%   {
+        background: #eb9941;
+	}
+}
+@-moz-keyframes blinked {
+	50%   {
+        background: #fff;
+	}
+	100%   {
+        background: #eb9941;
+	}
+}
+@-o-keyframes blinked {
+	50%   {
+        background: #fff;
+	}
+	100%   {
+        background: #eb9941;
+	}
+}
+
+/*======= Blink animation =======*/
+
+.p_img {
+    position: relative;
+    width: var(--circleSize);
+    height: var(--circleSize);
+    color: transparent;
+    /*overflow: hidden;*/
+    transition: all .3s ease;
+}
+
+.p_img img {
+    position: absolute;
+    object-fit: cover;
+    width: var(--circleSize);
+    height: var(--circleSize);
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    -o-box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    z-index: 0;
+}
+
+.sub_p_img {
+    width: 2.5em !important;
+    height: 2.5em !important;
+}
+
+.p_img input {
+    display: none;
+}
+
+.p_img .-label {
+    cursor: pointer;
+    height: var(--circleSize);
+    width: var(--circleSize);
+}
+
+.p_img:hover>.-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 10000;
+    color: var(--fontColor);
+    transition: background-color .2s ease-in-out;
+    border-radius: var(--radius);
+    margin-bottom: 0;
+}
+
+
+.p_img i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2em;
+    height: 27px;
+    aspect-ratio: 4/2;
+}
+
+.p_img #subPP {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+/*--Profile image--*/
+
+/*  Blink Online class  */
+
+.circle_mark{
+    position: relative;
+}
+
+.circle_mark::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left:0;
+    border-radius: 50%;
+    transform: translateX(-3.1px);
+    overflow: hidden;
+}
+
+/*---Blink Online class---*/
+
+
+/*----- Reloading icon -----*/
+#loading > i:hover {
+    cursor: pointer;
+}
+/*===== Reloading icon =====*/
+
+/*--------- Background of converstion -----------*/
+
+.bkb > .bgchat{
+    background: url("../img/bg_conv.jpg") no-repeat !important;
+}
+
+#chatBox {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding-bottom: 3px !important;
+}
+
+#envelopeChat {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    filter: blur(6px);
+    background: #fff6;
+}
+/*========== Background of converstion ============*/
+

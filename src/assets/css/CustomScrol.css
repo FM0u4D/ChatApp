@@ -1,0 +1,50 @@
+/*===Scroll bar===*/
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 9px !important;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+    background: #c2d2e4;
+    -webkit-border-radius: 12px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+    background: #0a4c95;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    border: 1px solid #FFF;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+    background: #3289c8;
+}
+
+/* to hide scrollbar arrows */
+
+*::-moz-scrollbar-button,
+*::-moz-scrollbar-button,
+*::-webkit-scrollbar-button,
+*::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+
+/* Firefox */
+.scroller{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #0a4c95 #c2d2e4;
+}
+
+
+/*---Scroll bar---*/
