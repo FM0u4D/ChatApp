@@ -1,1 +1,5 @@
+<?php
+
+header("Location: ../");
+exit();
 
